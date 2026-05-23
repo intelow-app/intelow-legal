@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Intelow — Documents légaux</title>
+<style>
+  *{box-sizing:border-box;}
+  body{
+    margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    background:#0F0F1A;color:#F0F0FF;line-height:1.55;min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;
+  }
+  .logo{
+    width:96px;height:96px;border-radius:22px;
+    background:linear-gradient(135deg,#6C63FF,#9D4EDD);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:42px;font-weight:800;margin-bottom:24px;
+    box-shadow:0 12px 30px rgba(108,99,255,.4);letter-spacing:-2px;
+  }
+  h1{margin:0 0 8px;font-size:32px;font-weight:800;letter-spacing:-.5px;}
+  p.subtitle{margin:0 0 36px;color:#AAAAAD;font-size:15px;text-align:center;max-width:420px;}
+  .links{display:flex;flex-direction:column;gap:12px;width:100%;max-width:380px;}
+  a.card{
+    display:flex;align-items:center;gap:14px;padding:18px 20px;
+    background:#1A1A2E;border:1px solid #2E2E4E;border-radius:16px;
+    color:#F0F0FF;text-decoration:none;transition:all .15s ease;
+  }
+  a.card:hover{border-color:#6C63FF;transform:translateY(-2px);}
+  a.card .icon{font-size:22px;}
+  a.card .label{font-weight:600;font-size:15px;}
+  a.card .arrow{margin-left:auto;color:#666680;}
+  footer{margin-top:48px;font-size:12px;color:#666680;text-align:center;}
+  footer a{color:#9D97FF;text-decoration:none;}
+</style>
+</head>
+<body>
+  <div class="logo">i</div>
+  <h1>Intelow</h1>
+  <p class="subtitle">Documents légaux de l'application Intelow.</p>
+  <nav class="links">
+    <a class="card" href="./privacy.html">
+      <span class="icon">🛡️</span>
+      <span class="label">Politique de confidentialité</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="card" href="./terms.html">
+      <span class="icon">📄</span>
+      <span class="label">Conditions générales d'utilisation</span>
+      <span class="arrow">→</span>
+    </a>
+  </nav>
+  <footer>
+    Contact : <a href="mailto:hello.intelow@gmail.com">hello.intelow@gmail.com</a>
+  </footer>
+</body>
+</html>
