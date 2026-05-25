@@ -18,9 +18,13 @@
   h2{font-size:20px;font-weight:700;color:#F0F0FF;letter-spacing:-.3px;
     margin-top:32px;margin-bottom:10px;}
   p{margin:0 0 14px;color:#C8C8D8;font-size:15px;white-space:pre-wrap;}
+  .editor-block{background:#1A1A2E;border:1px solid #2E2E4E;border-radius:14px;
+    padding:18px 20px;margin-top:12px;font-size:14.5px;color:#D8D8E8;}
+  .editor-block strong{color:#FFFFFF;}
   footer{padding:24px;text-align:center;color:#666680;font-size:13px;
     border-top:1px solid #1A1A2E;}
   footer a{color:#9D97FF;text-decoration:none;}
+  a{color:#9D97FF;}
 </style>
 </head>
 <body>
@@ -31,46 +35,99 @@
 </header>
 <main>
 
-<h2>1. Introduction</h2>
-<p>Intelow accorde une grande importance à la protection des données personnelles de ses utilisateurs. La présente politique décrit les données collectées, leur utilisation et vos droits, conformément au Règlement Général sur la Protection des Données (RGPD).</p>
+<h2>1. Éditeur du service</h2>
+<p>Le présent service est édité à titre non-professionnel par :</p>
+<div class="editor-block">
+<strong>Dan Benisti</strong> — Éditeur non-professionnel<br>
+Pays : France<br>
+Contact : <a href="mailto:hello.intelow@gmail.com">hello.intelow@gmail.com</a>
+</div>
+<p>Conformément à la loi pour la Confiance dans l'Économie Numérique (LCEN, art. 6 III), l'éditeur non-professionnel peut conserver l'anonymat partiel de ses coordonnées postales, tout en restant identifiable par son nom et joignable par voie électronique. L'hébergeur (voir section 6) dispose des coordonnées complètes en cas de demande légale.</p>
 
-<h2>2. Données collectées</h2>
+<h2>2. Responsable du traitement</h2>
+<p>Dan Benisti est responsable du traitement des données personnelles collectées via l'application Intelow, au sens du Règlement Général sur la Protection des Données (RGPD, UE 2016/679).</p>
+<p>Toute demande relative à vos données personnelles peut être adressée à : <a href="mailto:hello.intelow@gmail.com">hello.intelow@gmail.com</a></p>
+
+<h2>3. Introduction</h2>
+<p>Intelow accorde une grande importance à la protection des données personnelles de ses utilisateurs. La présente politique décrit les données collectées, leur utilisation, vos droits et les destinataires éventuels, conformément au RGPD.</p>
+
+<h2>4. Données collectées</h2>
 <p>Nous collectons les données suivantes :
 
-• Adresse email (pour l'authentification)
-• Pseudo choisi à l'inscription
-• Données d'apprentissage : XP, série quotidienne, mots appris, réponses aux exercices
+• Données d'identification : adresse email (pour l'authentification), pseudo choisi à l'inscription
+• Données d'apprentissage : XP, série quotidienne, mots appris, réponses aux exercices, niveau CEFR détecté
+• Données d'usage (anonymisées ou pseudonymisées) : fréquence d'ouverture de l'application, temps de réponse aux exercices, progression dans le contenu, engagement quotidien
+• Données techniques : rapports de crash anonymisés (Firebase Crashlytics), événements d'usage analytiques (Firebase Analytics)
 • Préférences : objectif, niveau, fréquence de notifications, catégories Culture G favorites
 • Signalements de contenu effectués via l'application
 
-Aucune donnée sensible (santé, opinions, etc.) n'est collectée.</p>
+Aucune donnée sensible (santé, opinions politiques, religion, orientation sexuelle, etc.) n'est collectée.</p>
 
-<h2>3. Finalités du traitement</h2>
+<h2>5. Finalités du traitement</h2>
 <p>Les données sont collectées et utilisées pour :
 
 • Permettre l'authentification et l'accès à votre compte
-• Personnaliser votre expérience d'apprentissage
+• Personnaliser votre expérience d'apprentissage (algorithme de répétition espacée SM-2)
 • Mesurer votre progression et calculer les répétitions optimales
 • Améliorer le contenu pédagogique sur la base des signalements
-• Vous envoyer des notifications de rappel (avec votre accord)</p>
+• Vous envoyer des notifications de rappel (avec votre accord)
+• Améliorer les mécanismes d'apprentissage et l'expérience utilisateur à partir des données d'usage anonymisées ou pseudonymisées
+• Détecter et corriger les bugs via les rapports de crash</p>
 
-<h2>4. Base légale</h2>
+<h2>6. Hébergement, sous-traitants et transferts internationaux</h2>
+<p>Les données sont hébergées via Google Firebase (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande). Les services Firebase utilisés sont :
+
+• Firebase Authentication (gestion des comptes)
+• Cloud Firestore (stockage des données utilisateurs)
+• Firebase Cloud Messaging (notifications)
+• Firebase Crashlytics (rapports de crash anonymisés)
+• Firebase Analytics (statistiques d'usage)
+
+Certaines de ces données peuvent être transférées hors de l'Union Européenne (notamment vers les États-Unis), dans le respect des clauses contractuelles types approuvées par la Commission européenne et des règles de protection mises en place par Google.</p>
+<p>Les communications entre l'application et les serveurs sont chiffrées (HTTPS / TLS). L'accès aux données est restreint aux personnes autorisées et à votre propre compte.</p>
+
+<h2>7. Notifications push</h2>
+<p>L'application Intelow envoie des notifications push (rappels d'apprentissage au déverrouillage du téléphone) via :
+
+• Firebase Cloud Messaging (FCM) sur Android
+• Apple Push Notification Service (APNs) sur iOS (le cas échéant)
+
+Ces notifications sont configurables au sein de l'application (Profil → Fréquence) et peuvent être désactivées à tout moment depuis les réglages système de votre téléphone.</p>
+
+<h2>8. Données d'usage et amélioration du service</h2>
+<p>Certaines données d'usage anonymisées ou pseudonymisées (fréquence d'ouverture, temps de réponse, progression, engagement quotidien) peuvent être utilisées afin d'améliorer les mécanismes d'apprentissage et l'expérience utilisateur. Aucune surveillance individuelle n'est effectuée — il s'agit de données agrégées.</p>
+
+<h2>9. Base légale</h2>
 <p>Le traitement repose sur :
 
 • Votre consentement (création de compte, notifications)
-• L'exécution du service que vous demandez (suivi de la progression)
-• Notre intérêt légitime à améliorer le service</p>
+• L'exécution du service que vous demandez (suivi de la progression, répétition espacée)
+• Notre intérêt légitime à améliorer le service (analyse des données d'usage agrégées, correction de bugs)</p>
 
-<h2>5. Hébergement et sécurité</h2>
-<p>Vos données sont hébergées chez Google Firebase (Google Ireland Limited), situé dans l'Union Européenne. Les communications entre l'application et les serveurs sont chiffrées (HTTPS). L'accès aux données est restreint aux personnes autorisées et à votre propre compte.</p>
+<h2>10. Durée de conservation</h2>
+<p>Vos données sont conservées tant que votre compte est actif. Si vous supprimez votre compte depuis l'application (voir section 11), toutes vos données personnelles sont effacées dans un délai de 30 jours, à l'exception des éventuelles obligations légales de conservation.</p>
 
-<h2>6. Durée de conservation</h2>
-<p>Vos données sont conservées tant que votre compte est actif. Si vous supprimez votre compte depuis l'écran « Profil », toutes vos données personnelles sont effacées dans un délai de 30 jours, à l'exception des éventuelles obligations légales de conservation.</p>
+<h2>11. Suppression du compte</h2>
+<p>Vous pouvez supprimer votre compte directement depuis l'application :</p>
+<div class="editor-block">
+<strong>Profil</strong> → section <strong>Compte</strong> → <strong>Supprimer mon compte</strong>
+</div>
+<p>Cette action est irréversible. Elle supprime :
 
-<h2>7. Partage des données</h2>
-<p>Vos données ne sont jamais vendues à des tiers. Elles ne sont partagées qu'avec nos prestataires techniques (Google Firebase pour l'hébergement, l'authentification et l'envoi d'emails), et uniquement dans la mesure nécessaire au fonctionnement du service.</p>
+• Votre compte d'authentification (email, mot de passe)
+• Votre profil (pseudo, niveau, XP, séries)
+• L'ensemble de vos données d'apprentissage (mots appris, réponses, statistiques)
+• La libération de votre pseudo (réutilisable par un autre utilisateur)
 
-<h2>8. Vos droits</h2>
+Une page web dédiée à la suppression de compte est également disponible si vous ne pouvez plus accéder à l'application : <a href="./delete-account.html">Demander la suppression de mon compte</a></p>
+
+<h2>12. Public mineur</h2>
+<p>Le service n'est pas destiné aux enfants de moins de 13 ans. Les utilisateurs âgés de 13 à 15 ans sont invités à obtenir l'autorisation de leurs parents ou représentants légaux avant utilisation. Intelow ne demande aucune donnée révélatrice de l'âge en dehors de la déclaration d'âge minimum lors de l'inscription.</p>
+
+<h2>13. Partage des données</h2>
+<p>Vos données ne sont jamais vendues à des tiers. Elles ne sont partagées qu'avec les sous-traitants techniques nécessaires au fonctionnement du service (Google Firebase, voir section 6), et uniquement dans la mesure strictement nécessaire à l'exploitation.</p>
+
+<h2>14. Vos droits</h2>
 <p>Conformément au RGPD, vous disposez des droits suivants :
 
 • Accès à vos données
@@ -80,16 +137,16 @@ Aucune donnée sensible (santé, opinions, etc.) n'est collectée.</p>
 • Portabilité
 • Opposition
 
-Pour exercer ces droits, contactez-nous à hello.intelow@gmail.com. Vous pouvez aussi déposer une réclamation auprès de la CNIL (cnil.fr).</p>
+Pour exercer ces droits, contactez-nous à <a href="mailto:hello.intelow@gmail.com">hello.intelow@gmail.com</a>. Vous pouvez aussi déposer une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank">cnil.fr</a>).</p>
 
-<h2>9. Cookies et traceurs</h2>
-<p>L'application mobile Intelow n'utilise pas de cookies traditionnels mais peut stocker des données techniques localement (préférences, cache) afin d'améliorer votre expérience.</p>
+<h2>15. Cookies et traceurs</h2>
+<p>L'application mobile Intelow n'utilise pas de cookies traditionnels. Elle stocke localement sur le téléphone des données techniques (préférences, cache de session, identifiants de notification) afin d'améliorer votre expérience. Ces données restent sur votre appareil et peuvent être effacées en désinstallant l'application.</p>
 
-<h2>10. Modifications</h2>
+<h2>16. Modifications</h2>
 <p>Cette politique peut être mise à jour. Les changements importants vous seront notifiés via l'application ou par email. La date de dernière mise à jour figure en haut du document.</p>
 
-<h2>11. Contact</h2>
-<p>Pour toute question concernant cette politique ou vos données personnelles, écrivez-nous à : <a href="mailto:hello.intelow@gmail.com" style="color:#9D97FF;">hello.intelow@gmail.com</a></p>
+<h2>17. Contact</h2>
+<p>Pour toute question concernant cette politique ou vos données personnelles, écrivez-nous à : <a href="mailto:hello.intelow@gmail.com">hello.intelow@gmail.com</a></p>
 
 </main>
 <footer>Contact : <a href="mailto:hello.intelow@gmail.com">hello.intelow@gmail.com</a></footer>
